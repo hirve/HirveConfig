@@ -13,3 +13,9 @@ keyword instruction(options)=outputVar instr2(opt1, o2, o3)=outputVar2
 - Using minimalistic style config file syntax with indent based hierarchy
 - Attaching custom type object to each node
 - Assigning ID to nodes and tree searching functionality
+
+### Installing
+```
+git clone https://github.com/hirve/HirveConfig/
+mvn package
+```

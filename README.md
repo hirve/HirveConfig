@@ -17,5 +17,6 @@ keyword instruction(options)=outputVar instr2(opt1, o2, o3)=outputVar2
 ### Installing
 ```
 git clone https://github.com/hirve/HirveConfig/
+cd HirveConfig
 mvn package
 ```

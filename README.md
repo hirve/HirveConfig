@@ -20,3 +20,38 @@ git clone https://github.com/hirve/HirveConfig/
 cd HirveConfig
 mvn package
 ```
+
+### Using
+Importing
+```
+import com.github.hirve.config.library.Exceptions;
+import com.github.hirve.config.model.*;
+```
+
+Initializing with preferences
+```
+String preferencesFilePathString = "config/preferences.conf";
+ConfigModel<CustomType> configModel = new ConfigModel<>(preferencesFilePathString);
+```
+
+Parsing desirable config to model
+```
+String testConfigFilePathString = "config/testConfig.hirve";
+try {
+  configModel.parse(testConfigFilePathString);
+} catch (Exceptions.IncorrectSyntaxException e) {
+  Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, e);
+}
+Config<CustomType> config = configModel.getConfig();
+```
+
+Getting root node
+```
+ConfigNode<CustomType> root = config.getRoot();
+```
+
+Getting node by ID
+```
+String Id = "nodeID";
+ConfigNode<CustomType> node = config.getConfigNodeById(Id);    
+```

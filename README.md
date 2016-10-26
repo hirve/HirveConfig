@@ -23,19 +23,19 @@ mvn package
 
 ### Using
 Importing
-```
+```java
 import com.github.hirve.config.library.Exceptions;
 import com.github.hirve.config.model.*;
 ```
 
 Initializing with preferences
-```
+```java
 String preferencesFilePathString = "config/preferences.conf";
 ConfigModel<CustomType> configModel = new ConfigModel<>(preferencesFilePathString);
 ```
 
 Parsing desirable config to model
-```
+```java
 String testConfigFilePathString = "config/testConfig.hirve";
 try {
   configModel.parse(testConfigFilePathString);
@@ -46,12 +46,12 @@ Config<CustomType> config = configModel.getConfig();
 ```
 
 Getting root node
-```
+```java
 ConfigNode<CustomType> root = config.getRoot();
 ```
 
 Getting node by ID
-```
+```java
 String Id = "nodeID";
 ConfigNode<CustomType> node = config.getConfigNodeById(Id);    
 ```

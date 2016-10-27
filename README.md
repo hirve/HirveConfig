@@ -77,4 +77,13 @@ Getting parent node
 ConfigNode<CustomType> parentNode = node.getParent();
 ```
 
+Checking if node is in branch of another node
+```java
+boolean isInTree = node.isInTreeOf(root);
+```
+
+Checking if node is root
+```java
+boolean isRoot = node.isRoot();
+```
 

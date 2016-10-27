@@ -56,6 +56,7 @@ String Id = "nodeID";
 ConfigNode<CustomType> node = config.getConfigNodeById(Id);    
 ```
 
+### Node API
 Attaching custom type object to node
 ```java
 CustomType customTypeObject = new CustomType();

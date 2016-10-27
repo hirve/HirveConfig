@@ -21,7 +21,7 @@ cd HirveConfig
 mvn package
 ```
 
-### Using
+### Usage
 Importing
 ```java
 import com.github.hirve.config.library.Exceptions;

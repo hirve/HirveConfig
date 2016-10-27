@@ -55,3 +55,26 @@ Getting node by ID
 String Id = "nodeID";
 ConfigNode<CustomType> node = config.getConfigNodeById(Id);    
 ```
+
+Attaching custom type object to node
+```java
+CustomType customTypeObject = new CustomType();
+node.setStructureNode(customTypeObject);
+```
+
+Getting the object attached to node
+```java
+CustomType customTypeObject = node.getStructureNode();
+```
+
+Getting child nodes
+```java
+ArrayList<ConfigNode<CustomType>> childNodes = node.getChilds();
+```
+
+Getting parent node
+```java
+ConfigNode<CustomType> parentNode = node.getParent();
+```
+
+

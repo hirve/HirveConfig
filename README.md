@@ -1,5 +1,5 @@
 # HirveConfig
-The library to convert config file into DOM-like tree model.
+The library to convert config file into DOM-like tree model. Originally the project was created to make a custom SVG-like vector graphic format for 3D with indent based syntax.
 
 ### Config file syntax
 ```
